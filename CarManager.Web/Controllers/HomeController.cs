@@ -23,6 +23,7 @@ namespace CarManager.Web.Controllers
             model.Id = 12345;
             model.Name = "张三";
             model.Age = "11";
+            model.Sex = "男";
 
             return View(carService.GetCars());//
 
