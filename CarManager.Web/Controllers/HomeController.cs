@@ -18,7 +18,7 @@ namespace CarManager.Web.Controllers
 
         public ActionResult Index()
         {
-            return View(carService.GetCars());
+            return View(carService.GetCars());//zaaaaaaa
         }
 
     }
