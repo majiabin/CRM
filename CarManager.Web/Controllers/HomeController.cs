@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -18,7 +19,13 @@ namespace CarManager.Web.Controllers
 
         public ActionResult Index()
         {
-            return View(carService.GetCars());//zaaaaaaa
+            dynamic model = new ExpandoObject();//动态类型
+            model.Id = 12345;
+            model.Name = "张三";
+            model.Age = "11";
+
+            return View(carService.GetCars());//
+
         }
 
     }

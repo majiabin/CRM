@@ -9,9 +9,6 @@ namespace CarManager.WebCore.MVC
 {
    public class BaseController: Controller
     {
-       protected override JsonResult Json()
-       {
-
-       }
+   
     }
 }
