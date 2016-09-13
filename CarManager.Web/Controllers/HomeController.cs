@@ -19,7 +19,7 @@ namespace CarManager.Web.Controllers
 
         public ActionResult Index()
         {
-            dynamic model = new ExpandoObject();//动态类型
+            dynamic model = new ExpandoObject() ;//动态类型
             model.Id = 12345;
             model.Name = "张三";
             model.Age = "11";
