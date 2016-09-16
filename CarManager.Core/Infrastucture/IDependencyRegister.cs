@@ -10,6 +10,5 @@ namespace CarManager.Core.Infrastucture
     public interface IDependencyRegister
     {
         void RegisterType(IUnityContainer container);
-        
     }
 }
